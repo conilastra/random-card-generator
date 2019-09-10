@@ -1,0 +1,66 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+#card-content {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    height: 450px;
+    position: absolute;
+    width: 300px;
+}
+
+#number {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    font-size: 10rem;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.number-red {
+    color:red;
+}
+
+.number-black {
+    color:black;
+}
+
+::before {
+    position: absolute;
+    font-size: 7rem;
+    left: 1rem;
+}
+
+::after {
+    bottom: 0;
+    right: 1rem;
+    position: absolute;
+    font-size: 7rem;
+    transform: rotate(180deg);
+}
+
+.hearts::before, .hearts::after {
+    content: "\2665";
+    color: red;
+}
+
+.diamonds::before, .diamonds::after {
+    content: "\2666";
+    color: red;
+}
+
+.clubs::before, .clubs::after {
+    content: "\2663";
+    color: black;
+}
+
+.spades::before, .spades::after {
+    content: "\2660";
+    color: black;
+}
